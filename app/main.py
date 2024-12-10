@@ -18,7 +18,9 @@ logging.getLogger("pymongo").setLevel(logging.WARNING)  # Set to WARNING or ERRO
 app = FastAPI()
 origins = [
     "http://localhost:3000",
-    "http://192.168.1.81:3000"
+    "http://192.168.1.81:3000",
+    "http://54.226.181.87:8000",
+
 ]
 app.add_middleware(
     CORSMiddleware,
